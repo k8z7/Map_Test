@@ -15,28 +15,104 @@
         android:layout_height="match_parent"
         android:background="#1100ff00">
 
-        <TextView android:layout_width="match_parent" android:layout_height="50dp"/>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:background="#f16c33"
+            android:textSize="16sp"
+            android:textColor="#ffffee"
+            android:text="화면/좌우 번호 클릭 => 해당 도움말"
+            android:gravity="center" />
 
-        <LinearLayout android:background="#ffffff"
+        <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <TextView android:layout_width="120dp" android:layout_height="match_parent"/>
+            <TextView android:layout_width="135dp" android:layout_height="match_parent"/>
 
-            <TextView
-                android:layout_width="45dp"
-                android:layout_height="match_parent"
-                android:textSize="24sp"
-                android:onClick="hit"
-                android:text="①"/>
+            <TextView style="@style/Number45" android:onClick="hit" android:text="①"/>
+            <TextView style="@style/Number45" android:onClick="hit" android:text="②"/>
+            <TextView style="@style/Number45" android:onClick="hit" android:text="③"/>
+            <TextView style="@style/Number45" android:onClick="hit" android:text="④"/>
+            <!--//-->
+            <TextView style="@style/Number33" android:onClick="hit" android:text="⑤"/>
 
-            <TextView
-                android:layout_width="45dp"
-                android:layout_height="match_parent"
-                android:textSize="24sp"
-                android:onClick="hit"
-                android:text="②"/>
+        </LinearLayout>
+
+        <TextView android:layout_width="match_parent" android:layout_height="5dp"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView android:layout_width="43dp" android:layout_height="match_parent"/>
+
+            <TextView style="@style/Number33" android:onClick="hit" android:text="⑥"/>
+            <TextView style="@style/Number33" android:onClick="hit" android:text="⑦"/>
+            <TextView style="@style/Number33" android:onClick="hit" android:text="⑧"/>
+            <TextView style="@style/Number33" android:onClick="hit" android:text="⑨"/>
+            <TextView style="@style/Number33" android:onClick="hit" android:text="⑩"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView android:layout_weight="0" android:layout_width="5dp" android:layout_height="match_parent"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="35dp"
+                android:layout_weight="0"
+                android:layout_height="match_parent">
+
+                <TextView style="@style/Number33" android:layout_weight="1" android:onClick="hit" android:text="①"/>
+                <TextView style="@style/Number33" android:layout_weight="1" android:onClick="hit" android:text="②"/>
+                <TextView style="@style/Number33" android:layout_weight="1" android:onClick="hit" android:text="③"/>
+                <TextView style="@style/Number33" android:layout_weight="1" android:onClick="hit" android:text="④"/>
+                <TextView style="@style/Number33" android:layout_weight="1" android:onClick="hit" android:text="⑤"/>
+                <TextView style="@style/Number33" android:layout_weight="1" android:onClick="hit" android:text="⑥"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+
+                <TextView android:layout_width="match_parent" android:layout_height="140dp"/>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView android:layout_weight="1" android:layout_width="0dp" android:layout_height="match_parent"/>
+                    <TextView style="@style/Number33" android:layout_weight="0" android:layout_width="40dp"  android:onClick="hit" android:text="⑪"/>
+                </LinearLayout>
+
+                <TextView android:layout_width="match_parent" android:layout_height="50dp"/>
+
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center" android:onClick="hit" android:text="⑫" android:textSize="56dp" android:textColor="#ff0000"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="35dp"
+                android:layout_weight="0"
+                android:layout_height="match_parent">
+
+                <TextView style="@style/Number33" android:layout_weight="1" android:onClick="hit" android:text="⑦"/>
+                <TextView style="@style/Number33" android:layout_weight="1" android:onClick="hit" android:text="⑧"/>
+                <TextView style="@style/Number33" android:layout_weight="1" android:onClick="hit" android:text="⑨"/>
+                <TextView style="@style/Number33" android:layout_weight="1" android:onClick="hit" android:text="⑩"/>
+                <TextView style="@style/Number33" android:layout_weight="1" android:onClick="hit" android:text="⑪"/>
+                <TextView style="@style/Number33" android:layout_weight="1" android:onClick="hit" android:text="⑫"/>
+
+            </LinearLayout>
 
         </LinearLayout>
 
